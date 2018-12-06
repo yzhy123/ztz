@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mapper.B_UserMapper">
+
+    <select id="findByName" resultType="cn.entity.B_User">
+        select * from b_user where 1 = 1
+        <if test="name !=null and name !=''">
+            and  username = #{name}
+        </if>
+    </select>
+
+
+    <select id="findRoleById" resultType="String">
+        SELECT b.`role_name` as roleName FROM b_user a,b_role b,b_user_role c
+        WHERE a.`id`=c.`u_id` AND b.`id` = c.`r_id` AND a.`id`=#{id}
+    </select>
+
+
+
+    <select id="findPermissionByRoleID" resultType="String">
+        SELECT a.permission_name AS permission FROM b_permission a,b_role b,b_role_permission c
+        WHERE a.`id` = c.p_id AND b.`id` = c.`r_id` AND b.`id` = #{id};
+    </select>
+</mapper>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+          http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       ">
+    <context:component-scan base-package="cn"/>
+    <tx:annotation-driven transaction-manager="transaction"/>
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=utf-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/ztz"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="transaction" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="cn.mapper"/>
+    </bean>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value=".jsp"/>
+        <property name="prefix" value="/"/>
+    </bean>
+    <!--&lt;!&ndash; shiro开启事务注解 &ndash;&gt;
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager" />
+    </bean>
+
+    &lt;!&ndash;
+     /**  除了已经设置的其他路径的认证
+  &ndash;&gt;
+    &lt;!&ndash; shiro工厂bean配置 &ndash;&gt;
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        &lt;!&ndash; shiro的核心安全接口 &ndash;&gt;
+        <property name="securityManager" ref="securityManager"></property>
+        &lt;!&ndash; 要求登录时的连接 &ndash;&gt;
+        <property name="loginUrl" value="/login.jsp"></property>
+        &lt;!&ndash; 登录成功后要跳转的连接(此处已经在登录中处理了) &ndash;&gt;
+        &lt;!&ndash; <property name="successUrl" value="/index.jsp"></property> &ndash;&gt;
+        &lt;!&ndash; 未认证时要跳转的连接 &ndash;&gt;
+        <property name="unauthorizedUrl" value="/refuse.jsp"></property>
+        &lt;!&ndash; shiro连接约束配置 &ndash;&gt;
+        <property name="filterChainDefinitions">
+            <value>
+                &lt;!&ndash; 对静态资源设置允许匿名访问 &ndash;&gt;
+                /images/** = anon
+                /js/** = anon
+                /css/** = anon
+                &lt;!&ndash; 可匿名访问路径，例如：验证码、登录连接、退出连接等 &ndash;&gt;
+                /login = anon
+                /*.do= anon
+                &lt;!&ndash; 剩余其他路径，必须认证通过才可以访问 &ndash;&gt;
+                /** = authc
+            </value>
+        </property>
+    </bean>
+
+    &lt;!&ndash; 配置shiro安全管理器 &ndash;&gt;
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realms" ref="customRealm"></property>
+    </bean>
+
+    &lt;!&ndash; 自定义Realm &ndash;&gt;
+    <bean id="customRealm" class="cn.realm.UserRealm">
+        &lt;!&ndash;<property name="credentialsMatcher" ref="credentialsMatcher"></property>&ndash;&gt;
+    </bean>
+
+    &lt;!&ndash; 配置凭证算法匹配器 &ndash;&gt;
+    <bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+        &lt;!&ndash; Md5算法 &ndash;&gt;
+        <property name="hashAlgorithmName" value="Md5"></property>
+    </bean>-->
+</beans>
