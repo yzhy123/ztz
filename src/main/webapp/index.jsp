@@ -1216,7 +1216,7 @@
             <div id="full-screen-slider">
                 <ul id="slides">
                     <li style="background-image: url(images/banner1.jpg); z-index: 1; display: block; background-position: 50% 0%; background-repeat: no-repeat no-repeat;background-size:auto 426.99px ;">
-                        <a target="_blank" href="">北青旅30周年店庆</a>
+                        <a target="_blank" href="">十二月旅行避寒清单</a>
                     </li>
                     <li style="background-image: url(images/banner2.jpg); z-index: 1; display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat;">
                         <a target="_blank" href="">欧洲旅游Banner</a>
