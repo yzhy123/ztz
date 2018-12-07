@@ -1,16 +1,17 @@
 package cn.Test;
 
 import cn.entity.B_User;
+import cn.entity.Province;
 import cn.entity.User;
-import cn.service.B_UserService;
-import cn.service.SmsService;
-import cn.service.UserService;
+import cn.entity.ViewSpot;
+import cn.service.*;
 import cn.util.IndustrySMS;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Set;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -22,9 +23,14 @@ public class TestDemo {
     private UserService userService;
     @Resource
     private SmsService smsService;
+    @Resource
+    private ProvinceService provinceService;
+
+    @Resource
+    private ViewSpotService viewSpotService;
 
 
-    @org.junit.Test
+   /* @org.junit.Test
     public void testFindByName(){
         B_User b_user = b_userService.findByName("xizheng");
         if (b_user!=null){
@@ -46,12 +52,30 @@ public class TestDemo {
         if (user!=null){
             System.out.println("1");
         }
-    }
+    }*/
 
     @org.junit.Test
     public void testY(){
-        smsService.sendMessage("13222172557");
 
+        smsService.sendMessage("15952500621");
+    }
 
+  /*  @org.junit.Test
+    public void testPrv(){
+        List<Province> list = provinceService.findBySearchSum();
+        for (Province p:list){
+            System.out.println(p.getPvc_name());
+        }
+    }*/
+
+    @org.junit.Test
+    public void testVie(){
+        List<Province> list = provinceService.findBySearchSum();
+        for (Province p:list){
+            List<ViewSpot> list1 = viewSpotService.findViewByPrvName(p.getPvc_name());
+            for(ViewSpot v :list1){
+                System.out.println(p.getPvc_name()+":"+v.getV_name());
+            }
+        }
     }
 }
