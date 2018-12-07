@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mapper.ViewSpotMapper">
+    <select id="findViewByPrvName" resultType="cn.entity.ViewSpot">
+        SELECT a.* FROM viewspot a,province b WHERE a.p_id = b.id AND `type` = 0 and b.pvc_name =#{name}
+    </select>
+
+    <select id="findViewFirst" resultType="cn.entity.ViewSpot">
+        SELECT * FROM viewspot WHERE `type` = #{type} ORDER BY searchSum DESC LIMIT 0,#{num}
+    </select>
+
+
+</mapper>

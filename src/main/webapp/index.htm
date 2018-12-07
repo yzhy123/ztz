@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,9 +7,8 @@
   <link rel="stylesheet" type="text/css" href="css/new_default.css">
   <link rel="shortcut icon" href="" type="images/x-icon">
   <link rel="stylesheet" href="css/jquery.common.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/index.php.css">
-
+  <link rel="stylesheet" href="css/index.css">
   <title>旅游网</title>
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
   <script src="js/eluminate.js"></script>
@@ -28,7 +26,7 @@
   <img src="./images/v.do" height="1" width="1">
 </head>
 
-<body class="home" style="margin-top:20px;">
+<body class="home">
 <div style="margin-top:-20px;_margin-top:-10px;">
   <div class="lv_topbar js_box">
     <div class="topbar_box">
@@ -326,32 +324,225 @@
               <a class="tag" href="">&gt;</a>
             </h3>
             <div class="item_extra">
-              <c:forEach var="viewList" items="${viewList}">
-                <a href="">${viewList.v_name}</a>
-              </c:forEach>
-             <%-- <a href=""> <i>云南</i>
+              <a href=""> <i>云南</i>
               </a>
               <a href="">九寨沟</a>
               <a href="">华东</a>
-              <a class="end" href="">广西</a>--%>
+              <a class="end" href="">广西</a>
             </div>
           </span>
           <div class="i-mc">
             <div class="subitem2">
-              <c:forEach var="map" items="${map}">
-                <dl class="firest">
-                  <dt>
-                    <a target="_blank" href="">${map.key}</a>
-                  </dt>
-                  <dd>
-                    <c:forEach var="view" items="${map.value}">
-                        <em><a target="_blank" href="" >${view.v_name}</a></em>
-                    </c:forEach>
-                  </dd>
-                </dl>
+              <dl class="firest">
+                <dt>
+                  <a target="_blank" href="">海南</a>
+                </dt>
+                <dd> <em><a target="_blank" href="">三亚</a></em> 
+                  <em>
+                    <a target="_blank" href="">蜈支洲岛</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">南山</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">云南</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">昆明</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">丽江</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">大理</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">西双版纳</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">香格里拉</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">腾冲瑞丽</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">广西</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">桂林</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">南宁</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">北海</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">福建</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">厦门</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">武夷山</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">鼓浪屿</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">永定土楼</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">湖南</a>
 
-              </c:forEach>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">张家界</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">长沙</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">凤凰古城</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">华东</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">上海</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">杭州</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">南京</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">乌镇</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">周庄</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">苏州</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">黄山</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">普陀山</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">千岛湖</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">扬州</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">四川</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">峨眉乐山</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">九寨沟</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">东北</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">海参崴</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">漠河</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">雪乡</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">亚布力</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">哈尔滨</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">长白山</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">吉林</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">朝鲜</a>
+                  </em>
+                </dd>
+              </dl>
 
+              <dl>
+                <dt>
+                  <a target="_blank" href="">新疆</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">吐鲁番</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">乌鲁木齐</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">天池</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a target="_blank" href="">西藏</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">青甘宁</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">林芝</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">日喀则</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">雅鲁藏布大峡谷</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">珠穆朗玛峰</a>
+                  </em>
+                </dd>
+              </dl>
             </div>
             <div class="subitem2">
               <dl class="firest">
@@ -532,29 +723,95 @@
         <div class="item">
           <span>
             <h3>
+              <a href="">欧洲</a>
               <a href="">海岛</a>
               <a class="tag" href="">&gt;</a>
             </h3>
             <div class="item_extra">
-               <c:forEach var="daoList" items="${daoList}">
-                 <a href="">${daoList.v_name}</a>
-               </c:forEach>
-
+              <a href="">法意瑞</a>
+              <a href="">北欧</a>
+              <a href="">马尔代夫</a>
+              <a class="end" href="">巴厘岛</a>
             </div>
           </span>
+
           <div class="i-mc">
             <div class="subitem">
               <dl class="firest">
+                <dt>
+                  <a target="_blank" href="">欧洲</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a target="_blank" href="">北欧</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">俄罗斯</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">西班牙葡萄牙</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">欧洲多国</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">捷克</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">英国</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">希腊</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">德国</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">荷兰</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">瑞士</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">法国</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">意大利</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">法意瑞</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">乌克兰</a>
+                  </em>
+                </dd>
+              </dl>
               <dl>
                 <dt>
                   <a target="_blank" href="">海岛</a>
                 </dt>
                 <dd>
-                <c:forEach var="daoList1" items="${daoList1}">
                   <em>
-                    <a target="_blank" href="">${daoList1.v_name}</a>
+                    <a target="_blank" href="">普吉岛</a>
                   </em>
-                </c:forEach>
+                  <em>
+                    <a target="_blank" href="">巴厘岛</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">长滩岛</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">马尔代夫</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">塞班岛</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">毛里求斯</a>
+                  </em>
+                  <em>
+                    <a target="_blank" href="">苏梅岛</a>
+                  </em>
                 </dd>
               </dl>
             </div>
@@ -951,11 +1208,50 @@
 <div class="banner_out">
   <div id="full-screen-slider">
         <ul id="slides">
-          <c:forEach items="${bannerImagesList}" var="BannerImages">
-            <li style='background-image:url(${BannerImages.getTurl()}); z-index: 1; display: block; background-position: 50% 0%; background-repeat: no-repeat no-repeat;'>
-              <a target='_blank' href=''>${BannerImages.getTname()}</a>
-            </li>
-          </c:forEach>
+          <li style="background-image: url(images/banner1.jpg); z-index: 1; display: block; background-position: 50% 0%; background-repeat: no-repeat no-repeat;background-size:auto 426.99px ;">
+            <a target="_blank" href="">北青旅30周年店庆</a>
+          </li>
+          <li style="background-image: url(images/banner2.jpg); z-index: 1; display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat;">
+            <a target="_blank" href="">欧洲旅游Banner</a>
+          </li>
+          <li style="background-image: url(images/banner3.jpg); z-index: 1; display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat;">
+            <a target="_blank" href="">韩国旅游Banner</a>
+          </li>
+          <li style="background-image: url(images/banner4.jpg); z-index: 1; display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat;">
+            <a target="_blank" href="">日本旅游Banner</a>
+          </li>
+          <li style="background-image: url(images/banner5.jpg); z-index: 1; display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat;">
+            <a target="_blank" href="">云南旅游Banner</a>
+          </li>
+          <li style="background-image: url(images/banner6.jpg); z-index: 0; display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat;">
+            <a target="_blank" href="">华东旅游Banner</a>
+          </li>
+          <li style="background-image: url(images/banner7.jpg); z-index: 1; display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat;">
+            <a target="_blank" href="">九寨沟旅游Banner</a>
+          </li>
+        </ul>
+        <ul id="pagination" class="qiehuan_ul" style="margin-left: 295px;">
+          <li class="current" >
+            <span>1</span>
+          </li>
+          <li class="">
+            <span>2</span>
+          </li>
+          <li class="">
+            <span>3</span>
+          </li>
+          <li class="">
+            <span>4</span>
+          </li>
+          <li class="">
+            <span>5</span>
+          </li>
+          <li>
+            <span>6</span>
+          </li>
+          <li class="">
+            <span>7</span>
+          </li>
         </ul>
     </div>
   </div>
