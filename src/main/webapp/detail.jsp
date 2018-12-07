@@ -2333,8 +2333,8 @@
                             <!--txt1-->
                             <div class="play_date">
                                 <form method="post" action="http://www.lvmama.com/buy/fill.do" onsubmit="return beforeSubmit(this);">
-                                    <input type="hidden" id="productIdHidden" name="buyInfo.productId" value="60971">
-                                    <input type="hidden" id="productBranchIdHidden" name="buyInfo.prodBranchId" value="60971">
+                                    <input type="hidden" name="buyInfo.productId" value="60971">
+                                    <input type="hidden" name="buyInfo.prodBranchId" value="60971">
                                     <input type="hidden" name="buyInfo.productType" value="ROUTE">
                                     <input type="hidden" id="subProductType" name="buyInfo.subProductType" value="FREENESS_FOREIGN">
                                     <input type="hidden" id="selfPack" value="">
@@ -2565,13 +2565,13 @@
                                                         <td>
 														<span class="price-wrap">
 															<em class="minus price-disable" onclick="">-</em>
-															<input seq="1" name="buyInfo.buyNum.product_60971" id="param60971" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;60971&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum60971" people="1" branchid="60971">
+															<input seq="1" name="buyInfo.buyNum.product_60971"  type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="" minamt="0" maxamt="100" textnum="textNum60971" people="1" branchid="60971">
 															<em class="plus" onclick="">+</em>
 														</span>
                                                         </td>
                                                         <td>
 														<span>
-															(单价 <dfn>¥ <font class="product_60971_price" id="product_60971_price">12800</font></dfn>
+															(单价 <dfn>¥ <font class="product_60971_price">12800</font></dfn>
 															)
 														</span>
                                                         </td>
@@ -2589,13 +2589,13 @@
                                                         <td>
 														<span class="price-wrap">
 															<em class="minus price-disable" onclick="">-</em>
-															<input seq="1" name="buyInfo.buyNum.product_100232" id="param100232" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;100232&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum100232" people="1" branchid="100232">
+															<input seq="1" name="buyInfo.buyNum.product_100232" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;100232&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum100232" people="1" branchid="100232">
 															<em class="plus" onclick="">+</em>
 														</span>
                                                         </td>
                                                         <td>
 														<span>
-															(单价 <dfn>¥ <font class="product_100232_price" id="product_100232_price">12900</font></dfn>
+															(单价 <dfn>¥ <font class="product_100232_price">12900</font></dfn>
 															)
 														</span>
                                                         </td>
@@ -3582,7 +3582,7 @@
                                     <td>
 							<span class="price-wrap">
 								<em class="minus price-disable" onclick="">-</em>
-								<input seq="1" name="buyInfo.buyNum.product_60971" id="param60971" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;60971&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum60971" people="1" branchid="60971">
+								<input seq="1" name="buyInfo.buyNum.product_60971" id="param60971" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="" minamt="0" maxamt="100" textnum="textNum60971" people="1" branchid="60971">
 								<em class="plus" onclick="">+</em>
 							</span>
                                     </td>
@@ -3610,7 +3610,7 @@
                                     <td>
 							<span class="price-wrap">
 								<em class="minus price-disable" onclick="">-</em>
-								<input seq="1" name="buyInfo.buyNum.product_100232" id="param100232" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;100232&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum100232" people="1" branchid="100232">
+								<input seq="1" name="buyInfo.buyNum.product_100232" id="param100232" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="" minamt="0" maxamt="100" textnum="textNum100232" people="1" branchid="100232">
 								<em class="plus" onclick="">+</em>
 							</span>
                                     </td>

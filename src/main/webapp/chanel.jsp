@@ -47,7 +47,7 @@
             <li class="sitemap"><a href="#">网站地图</a></li>
             <li class="site-mobile"><a class="p_lvlink" href="#" rel="nofollow" target="_blank"><i class="icon-mobile"></i>手机版</a></li>
         </ul>
-        <div class="p_welcome"> <span>您好，欢迎来到在途中！</span> <a class="p_login" href="#">登录</a> <a href="#">注册</a> </div>
+        <div class="p_welcome"><span>您好，欢迎来到在途中！</span> <a class="p_login" href="#">登录</a> <a href="#">注册</a> </div>
     </div>
 </div>
 <!-- //.topbar -->
@@ -257,9 +257,9 @@
         <!--产品特推结束-->
         <!--国外游开始-->
         <div class="p_tour">
-            <div class="p_tour_top" id="p_fore">
+            <div class="p_tour_top">
                 <h4>国外旅游路线</h4>
-                <a class="p_current3" id="p_ceshi" href="javascript:void(0)">日韩<i class="p_current4"></i></a> <a href="javascript:void(0)">东南亚<i></i></a> <a href="javascript:void(0)">马来西亚<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> </div>
+                <a class="p_current3" href="javascript:void(0)">日韩<i class="p_current4"></i></a> <a href="javascript:void(0)">东南亚<i></i></a> <a href="javascript:void(0)">马来西亚<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> </div>
             <div class="p_linebox">
                 <ul class="p_fore_con p_tour_con clearfix">
                     <li> <a class="p_imglist" href="#"> <img src="http://s1.lvjs.com.cn/uploads/pc/place2/120604/1385526474606.jpg" alt="">
@@ -616,9 +616,9 @@
         <!--国外游结束--
                 <!--国内游开始-->
         <div class="p_tour">
-            <div class="p_tour_top" id="p_fore">
+            <div class="p_tour_top">
                 <h4>国内旅游路线</h4>
-                <a class="p_current3" id="p_ceshi" href="javascript:void(0)">日韩<i class="p_current4"></i></a> <a href="javascript:void(0)">东南亚<i></i></a> <a href="javascript:void(0)">马来西亚<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> </div>
+                <a class="p_current3" href="javascript:void(0)">日韩<i class="p_current4"></i></a> <a href="javascript:void(0)">东南亚<i></i></a> <a href="javascript:void(0)">马来西亚<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> </div>
             <div class="p_linebox">
                 <ul class="p_fore_con p_tour_con clearfix">
                     <li> <a class="p_imglist" href="#"> <img src="http://s2.lvjs.com.cn/uploads/pc/place2/16564/1384759835257.jpg" alt="">
@@ -981,9 +981,9 @@
         <!--国内游结束-->
         <!--主题游开始-->
         <div class="p_tour">
-            <div class="p_tour_top" id="p_fore">
+            <div class="p_tour_top">
                 <h4>主题旅游路线</h4>
-                <a class="p_current3" id="p_ceshi" href="javascript:void(0)">日韩<i class="p_current4"></i></a> <a href="javascript:void(0)">东南亚<i></i></a> <a href="javascript:void(0)">马来西亚<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> </div>
+                <a class="p_current3" href="javascript:void(0)">日韩<i class="p_current4"></i></a> <a href="javascript:void(0)">东南亚<i></i></a> <a href="javascript:void(0)">马来西亚<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> <a href="javascript:void(0)">日韩<i></i></a> </div>
             <div class="p_linebox">
                 <ul class="p_fore_con p_tour_con clearfix">
                     <li> <a class="p_imglist" href="#"> <img src="http://s1.lvjs.com.cn/uploads/pc/place2/120604/1385526474606.jpg" alt="">

@@ -167,7 +167,7 @@
         <div class="p_city"> <i></i> <a class="p_switch-info">切换城市</a> <span>您现在 <b>深圳</b> </span> </div>
     </div>
     <div class="p_from">
-        <div class="p_city1" style="border-bottom-color: rgb(70, 140, 0); background: url(file:///C:/Users/Mr-he/Desktop/jianzhi/html/images/sanjiao.png) 100px 12px no-repeat;">深圳
+        <div class="p_city1" style="border-bottom-color: rgb(70, 140, 0);  100px 12px no-repeat;">深圳
             <div class="p_city1list" style="display: none;">
                 <dl>
                     <dt>热门出发城市</dt>
