@@ -6,4 +6,8 @@
     <select id="findByPhone" resultType="cn.entity.User">
         select * from user where phone=#{phone}
     </select>
+
+    <insert id="addUser" >
+        INSERT INTO `user`(phone,`password`) VALUES (#{phone},#{password})
+    </insert>
 </mapper>

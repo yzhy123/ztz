@@ -3,7 +3,9 @@ package cn.Test;
 import cn.entity.B_User;
 import cn.entity.User;
 import cn.service.B_UserService;
+import cn.service.SmsService;
 import cn.service.UserService;
+import cn.util.IndustrySMS;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -18,6 +20,9 @@ public class TestDemo {
     private B_UserService b_userService;
     @Resource
     private UserService userService;
+    @Resource
+    private SmsService smsService;
+
 
     @org.junit.Test
     public void testFindByName(){
@@ -41,5 +46,12 @@ public class TestDemo {
         if (user!=null){
             System.out.println("1");
         }
+    }
+
+    @org.junit.Test
+    public void testY(){
+        smsService.sendMessage("13222172557");
+
+
     }
 }

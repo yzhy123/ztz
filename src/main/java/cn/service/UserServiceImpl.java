@@ -19,6 +19,7 @@ public class UserServiceImpl implements UserService {
     public User findByPhone(String phone) {
         return userMapper.findByPhone(phone);
     }
+
     public void addUser(String phone,String password){
         userMapper.addUser(phone,password);
     }
