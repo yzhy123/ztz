@@ -11,5 +11,18 @@
         SELECT * FROM viewspot WHERE `type` = #{type} ORDER BY searchSum DESC LIMIT 0,#{num}
     </select>
 
+    <select id="findViewAround" resultType="cn.entity.ViewSpot">
+        SELECT * FROM viewspot WHERE p_id IN (SELECT p_id FROM viewspot WHERE v_name = #{name}) ORDER BY searchSum DESC
+    </select>
+
+    <select id="getViewSpot" resultType="cn.entity.ViewSpot">
+        select * from viewspot order by searchSum desc
+        limit 0,1;
+    </select>
+
+    <select id="getViewSpotList" resultType="cn.entity.ViewSpot">
+        select * from viewspot order by searchSum desc
+        limit 1,3;
+    </select>
 
 </mapper>

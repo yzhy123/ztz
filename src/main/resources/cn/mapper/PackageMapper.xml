@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mapper.PackageMapper">
+    <select id="findHotPackage" resultType="cn.entity.Package">
+        select * from package group by p_pay_sum
+        order by p_pay_sum desc
+        limit 0,2;
+    </select>
+</mapper>

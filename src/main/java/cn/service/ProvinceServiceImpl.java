@@ -18,4 +18,9 @@ private ProvinceMapper provinceMapper;
     public List<Province> findBySearchSum() {
         return provinceMapper.findBySearchSum();
     }
+
+    @Override
+    public List<Province> findAll() {
+        return provinceMapper.findAll();
+    }
 }

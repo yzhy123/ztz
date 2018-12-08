@@ -1,9 +1,11 @@
 package cn.controller;
 
 import cn.entity.BannerImages;
+import cn.entity.Package;
 import cn.entity.Province;
 import cn.entity.ViewSpot;
 import cn.service.BannerImagesService;
+import cn.service.PackageService;
 import cn.service.ProvinceService;
 import cn.service.ViewSpotService;
 import org.springframework.stereotype.Controller;
@@ -24,10 +26,13 @@ public class IndexController {
     private ProvinceService provinceService;
     @Resource
     private BannerImagesService bannerImagesService;
-
+    @Resource
+    private PackageService packageService;
     //显示前台
-    @RequestMapping("list.do")
-    public String list(Model model){
+    @RequestMapping("/index.do")
+    public String index(Model model){
+        List<Province> allProvince = provinceService.findAll();
+
         List<Province> provinceList = provinceService.findBySearchSum();
         List<ViewSpot> list =null;
         Map<String,List<ViewSpot>> map = new HashMap<String,List<ViewSpot>>();
@@ -41,23 +46,39 @@ public class IndexController {
         List<ViewSpot> daoList = viewSpotService.findViewFirst(3,1);
         //海岛排行前十
         List<ViewSpot> daoList1 = viewSpotService.findViewFirst(10,1);
+        //日本热门
+        List<ViewSpot> JapanList = viewSpotService.findViewFirst(4, 2);
+        ViewSpot viewSpot = viewSpotService.getViewSpot();
+        List<ViewSpot> viewSpotList = viewSpotService.getViewSpotList();
+        //
+        List<Package> packageList = packageService.findHotPackage();
 
-
+        //轮播图
         List<BannerImages> bannerImagesList = bannerImagesService.getAllBannerImg();
-        for (BannerImages b:bannerImagesList
-             ) {
-            System.out.println(b.getTurl());
-        }
 
-
-
+        model.addAttribute("allProvince",allProvince);
+        model.addAttribute("provinceList",provinceList);
         model.addAttribute("map",map);
         model.addAttribute("viewList",viewList);
+        model.addAttribute("viewSpot",viewSpot);
+        model.addAttribute("viewSpotList",viewSpotList);
         model.addAttribute("daoList",daoList);
         model.addAttribute("daoList1",daoList1);
+        model.addAttribute("JapanList",JapanList);
         model.addAttribute("bannerImagesList",bannerImagesList);
+        model.addAttribute("packageList",packageList);
 
         return "index";
     }
+
+   /* //三级联动
+    @RequestMapping("/city.do")
+    @ResponseBody
+    public String city(Integer opid){
+        List<City> cityList = cityService.findAll(opid);
+        String allStr = JSON.toJSONString(cityList);
+        System.out.println(allStr);
+        return allStr;
+    }*/
 
 }

@@ -17,4 +17,14 @@ public class PackageServiceImpl implements PackageService {
     public List<Package> findByBplaceAndView(String bplace, String view) {
         return packageMapper.findByBplaceAndView(bplace,view);
     }
+
+    @Override
+    public List<Package> findByBplaceAndView(String bplace, Integer id) {
+        return packageMapper.findByBplaceAndView(bplace,id);
+    }
+
+    @Override
+    public List<Package> findHotPackage() {
+        return packageMapper.findHotPackage();
+    }
 }

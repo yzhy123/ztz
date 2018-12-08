@@ -8,6 +8,40 @@ public class ViewSpot {
     private String v_price;
     private Integer searchSum;
     private Integer p_id;
+    private String img_url;//景点图片地址
+    private  Integer type;//景点类型0普通1海岛
+
+
+    public ViewSpot() {
+    }
+
+    public ViewSpot(Integer id, String v_address, String v_name, String v_des, String v_price, Integer searchSum, Integer p_id, String img_url, Integer type) {
+        this.id = id;
+        this.v_address = v_address;
+        this.v_name = v_name;
+        this.v_des = v_des;
+        this.v_price = v_price;
+        this.searchSum = searchSum;
+        this.p_id = p_id;
+        this.img_url = img_url;
+        this.type = type;
+    }
+
+    public String getImg_url() {
+        return img_url;
+    }
+
+    public void setImg_url(String img_url) {
+        this.img_url = img_url;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
 
     public Integer getId() {
         return id;

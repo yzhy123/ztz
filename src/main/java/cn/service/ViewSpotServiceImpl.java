@@ -1,5 +1,6 @@
 package cn.service;
 
+import cn.entity.Province;
 import cn.entity.ViewSpot;
 import cn.mapper.ViewSpotMapper;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,19 @@ public class ViewSpotServiceImpl implements ViewSpotService {
         return viewSpotMapper.findViewFirst(num,type);
     }
 
+    @Override
+    public List<ViewSpot> findViewAround(String name) {
+        return viewSpotMapper.findViewAround(name);
+    }
+    @Override
+    public ViewSpot getViewSpot() {
+        return viewSpotMapper.getViewSpot();
+    }
+
+    @Override
+    public List<ViewSpot> getViewSpotList() {
+        return viewSpotMapper.getViewSpotList();
+    }
 
 
 }
