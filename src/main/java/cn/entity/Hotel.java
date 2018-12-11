@@ -5,7 +5,11 @@ public class Hotel {
     private String h_address;
     private String h_name;
     private double h_price;
+    private double xPoint;
+    private double yPoint;
 
+    public Hotel() {
+    }
 
     public Integer getId() {
         return id;
@@ -31,13 +35,27 @@ public class Hotel {
         this.h_name = h_name;
     }
 
-
-
     public double getH_price() {
         return h_price;
     }
 
     public void setH_price(double h_price) {
         this.h_price = h_price;
+    }
+
+    public double getxPoint() {
+        return xPoint;
+    }
+
+    public void setxPoint(double xPoint) {
+        this.xPoint = xPoint;
+    }
+
+    public double getyPoint() {
+        return yPoint;
+    }
+
+    public void setyPoint(double yPoint) {
+        this.yPoint = yPoint;
     }
 }

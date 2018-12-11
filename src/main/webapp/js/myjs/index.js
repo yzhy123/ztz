@@ -1,16 +1,18 @@
 
 
 function clickHot(id) {
-    var name = $("#"+id).html();
+    var cName = $("#"+id).html();
     $("#js_cityId").empty();
-    $("#js_cityId").html(name);
+    $("#js_cityId").html(cName);
+    $("[name=cName]").val(cName);
 
 }
 
 //点击景点名跳转list面，展示对应景点下的套餐list.do
 function toList(vid) {
-    var provinceName = $("#js_cityId").html();
-    window.location.href="/list.do?viewId="+vid+"&bplaceId="+provinceName
+    var provinceName = $("[name=cName]").val();
+    var url = encodeURI(encodeURI("/list.do?vId="+vid+"&cName="+provinceName));
+    window.location.href=url;
 }
 //点击套餐名，跳转套餐详情页面内detail.do
 function toDetail(packageId) {

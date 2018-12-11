@@ -35,6 +35,17 @@
     </bean>
     <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+        <property name="plugins">
+            <bean class="com.github.pagehelper.PageHelper">
+                <property name="properties">
+                    <value>
+                        dialect=mysql
+                        reasonable=true
+                    </value>
+                </property>
+            </bean>
+        </property>
+
     </bean>
     <bean id="transaction" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>

@@ -8,4 +8,15 @@
         order by p_pay_sum desc
         limit 0,2;
     </select>
+    <select id="findDetail" resultType="cn.entity.Package">
+        SELECT * FROM package where id = #{packageId}
+    </select>
+
+    <select id="findPackListByViewId" resultType="cn.entity.Package">
+       select * from package where bplace=#{cName}
+       and eplace=#{viewName}
+    </select>
+    <select id="findByViewId" resultType="java.lang.String">
+        select v_name from viewspot where id=#{vId}
+    </select>
 </mapper>

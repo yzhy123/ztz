@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mapper.HotelMapper">
+    <select id="findHotelById" resultType="cn.entity.Hotel">
+        SELECT b.* FROM package a,hotel b WHERE a.hotelid =b.id AND  a.id = #{packageId}
+    </select>
+
+    <select id="getPoint" resultType="cn.entity.Hotel">
+        select * from hotel where id = #{hotelId}
+    </select>
+</mapper>

@@ -1,13 +1,8 @@
 package cn.controller;
 
-import cn.entity.BannerImages;
+import cn.entity.*;
 import cn.entity.Package;
-import cn.entity.Province;
-import cn.entity.ViewSpot;
-import cn.service.BannerImagesService;
-import cn.service.PackageService;
-import cn.service.ProvinceService;
-import cn.service.ViewSpotService;
+import cn.service.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,11 +23,14 @@ public class IndexController {
     private BannerImagesService bannerImagesService;
     @Resource
     private PackageService packageService;
+    @Resource
+    private CityService cityService;
     //显示前台
     @RequestMapping("/index.do")
     public String index(Model model){
         List<Province> allProvince = provinceService.findAll();
-
+        List<City> cityList = cityService.findBySearch();
+        System.out.println(cityList.size());
         List<Province> provinceList = provinceService.findBySearchSum();
         List<ViewSpot> list =null;
         Map<String,List<ViewSpot>> map = new HashMap<String,List<ViewSpot>>();
@@ -58,6 +56,7 @@ public class IndexController {
 
         model.addAttribute("allProvince",allProvince);
         model.addAttribute("provinceList",provinceList);
+        model.addAttribute("cityList",cityList);
         model.addAttribute("map",map);
         model.addAttribute("viewList",viewList);
         model.addAttribute("viewSpot",viewSpot);

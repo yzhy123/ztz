@@ -214,16 +214,17 @@
                 <input type="hidden" id="fromPlaceName" value="">
                 <div class="lv_search_box">
                     <div class="search_city js_LISTSECOND white">
-                        <div class="btn_city js_searchbox" data-city-name="广州" data-city-id="229" fromchannel=""><b
-                                id="js_cityId">广州</b>
+                        <div class="btn_city js_searchbox" data-city-name="广州" data-city-id="229" fromchannel="">
+                            <b id="js_cityId">广州</b>
+                            <input type="hidden" name="cName" value="广州"/>
                             <i class="lv_icon bar_img icon_jt1"></i>
                         </div>
                         <div class="lv_city_down another" style="z-index: 100;">
                             <p>热门出发城市</p>
                             <div class="search_city_hot">
-                                <c:forEach var="provinceList" items="${provinceList}">
-                                    <a id="${provinceList.id}" href="javascript:void(0)"
-                                       onclick="clickHot(${provinceList.id})">${provinceList.pvc_name}</a>
+                                <c:forEach var="cityList" items="${cityList}">
+                                    <a id="${cityList.id}" href="javascript:void(0)"
+                                       onclick="clickHot(${cityList.id})">${cityList.cityName}</a>
                                 </c:forEach>
                             </div>
                             <p>其他出发城市</p>
@@ -998,7 +999,7 @@
                         </div>
 
                         <!--马上出发大图1-->
-                        <!-- 景点的id 转到套餐页面时候用-->
+                        <!-- 景点的id 转到套餐页面时候用-->L
                         <div class="chufa_big css3_run css3_y-5 css3_shadow">
                             <a class="block" href="javascript:void(0)" onclick="toList(${viewSpot.id})">
                                 <img width="623" height="312" src="${viewSpot.img_url}">

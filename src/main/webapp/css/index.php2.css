@@ -84,12 +84,10 @@ pre {
 	word-wrap: break-word
 }
 
-q {
-	quotes: \201C \201D \2018 \2019
-}
 
-q: before,
-q: after {
+
+q:before,
+q:after {
 	content: ''
 }
 
@@ -119,11 +117,11 @@ a {
 	text-decoration: none
 }
 
-a: focus {
+a:focus {
 	outline: none
 }
 
-a: hover {
+a:hover {
 	text-decoration: underline
 }
 
@@ -235,8 +233,8 @@ img {
 }
 
 legend,
-button:: -moz-focus-inner,
-input:: -moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
 	border: 0;
 	padding: 0
 }
@@ -460,7 +458,7 @@ i.icon-barr {
 .lv-safety,
 #goTopBtn,
 #Feedback {
-	background: url(../image/imghf8.png) no-repeat;
+	background: url(../images/imghf8.png) no-repeat;
 	display: inline-block
 }
 
@@ -474,7 +472,7 @@ i.icon-barr {
 	position: absolute;
 	top: 18px;
 	display: none;
-	z-index: 10px;
+	z-index: 10;
 }
 
 .p_wechatcode {
@@ -557,7 +555,7 @@ i.icon-barr {
 	font-weight: normal
 }
 
-.lv-topbar a: hover {
+.lv-topbar a:hover {
 	text-decoration: underline;
 	color: #e08
 }
@@ -688,7 +686,7 @@ span.link_hover i {
 	height: 24px
 }
 
-.top-link .dropdown: hover .top-sub,
+.top-link .dropdown:hover .top-sub,
 .top-link li.current .top-sub {
 	display: block;
 	background: #fff
@@ -805,7 +803,7 @@ i.icon-barr {
 }
 
 .lv-logoAB {
-	background: url(http: //pic.lvmama.com/img/temp/logo-AB.png) no-repeat left center
+
 }
 
 .lv-adPro {
@@ -2871,7 +2869,8 @@ attractions_tictke li,
 	padding: 10px;
 	border: 6px solid #e5e5e5;
 	font-family: "Microsoft YaHei";
-	margin: 10px auto
+	margin: 10px auto;
+	height:456px;
 }
 
 .dtl_tit {
@@ -2945,6 +2944,7 @@ attractions_tictke li,
 .dtl_box_left {
 	float: left;
 	width: 554px;
+	height: 440px;
 	overflow: hidden
 }
 
@@ -2965,6 +2965,7 @@ attractions_tictke li,
 .dtl_focuslist {
 	float: right;
 	width: 98px;
+	height: 100px;
 	background: #ccc
 }
 
@@ -2979,7 +2980,7 @@ attractions_tictke li,
 .dtl_focuslist li img,
 .zz_panel {
 	width: 97px;
-	height: 54px;
+	height: 88px;
 	overflow: hidden
 }
 
@@ -3032,7 +3033,7 @@ attractions_tictke li,
 .dtl_crtimg li,
 .dtl_crtimg img {
 	width: 444px;
-	height: 220px
+	height: 350px
 }
 
 .dtl_calendar_d_crt .dtl_calendar_d_box {
@@ -4135,7 +4136,7 @@ attractions_tictke li,
 	background-position: -190px -243px
 }
 
-.send_recomment: hover {
+.send_recomment:hover {
 	background-position: -257px -243px
 }
 
@@ -7553,12 +7554,11 @@ icon1009,
 
 #s2-site-nav span {
 	display: block;
-	width: 108px
 }
 
 #s2-site-nav .quick-menu {
 	position: absolute;
-	left: 112px;
+	left: 118px;
 	top: 0px;
 	top: 1px\9;
 	_top: 0px

@@ -22,13 +22,20 @@
     <link rel="stylesheet" href="css/share_popup.css">
     <link rel="stylesheet" href="css/select_share.css">
     <link rel="stylesheet" href="css/select_share2.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/mycss/mycss/detail.css">
+
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" async charset="utf-8" src="js/blade_track_cn.js"></script>
     <script type="text/javascript" async src="js/ga.js"></script>
     <script src="js/cp-v3.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/zz.js"></script>
     <script src="js/bcore.min.js" type="text/javascript"></script>
+    <script src="js/myjs/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/lvmamaUI.js" ></script>
+    <script type="text/javascript" src="js/myjs/laydate/laydate.js" ></script>
+    <script type="text/javascript" src="js/myjs/detail.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2C7qpniwLyteYBOTVweNihZPAgQqFw8Z"></script>
 
     <script type="text/javascript">
 
@@ -405,7 +412,7 @@
                 <p class="bookNotes">本产品由在途中旅游网指定上海在途中兴旅国际旅行社有限公司及具有相关资质的合作旅行社提供相关资讯及服务</p>
 
                 <div class="dtl_tit">
-                    <h1 class="dtl_tit_txt">【出境暑假狂欢季】马尔代夫哈库拉CHAAYA LAGOON岛4晚6日自由行*5M航空直飞 一价全包</h1>
+                    <h1 class="dtl_tit_txt">${aPackage.title}</h1>
                     <!-- Baidu Button BEGIN -->
                     <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1402195481033">
                         <a href="" class="bds_more" data-cmd="more" hidefocus="false"></a>
@@ -455,7 +462,7 @@
                 </script>
                 <div class="dtl_boxinner">
                     <div class="dtl_box_left">
-                        <div class="dtl_focusbox">
+                        <div class="dtl_focusbox" style="position: relative">
                             <ul class="dtl_crtimg">
                                 <li style="display: none;">
                                     <img src="images/HWM3C.jpg" width="440px" height="220px" data-bd-imgshare-binded="1"></li>
@@ -468,30 +475,56 @@
                             </ul>
                             <ul class="dtl_focuslist">
                                 <li class="">
-                                    <img src="images/HWM3C(1).jpg" width="97" height="71" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s1.lvjs.com.cn/580x290/pics/super/2012/04/HWM3C.jpg" data-bd-imgshare-binded="1">
+                                    <img src="images/HWM3C(1).jpg" width="97" height="100" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s1.lvjs.com.cn/580x290/pics/super/2012/04/HWM3C.jpg" data-bd-imgshare-binded="1">
                                     <span class="zz_panel"></span>
                                 </li>
                                 <li class="dtl_focuslist">
-                                    <img src="images/7HDMC(1).jpg" width="97" height="71" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s3.lvjs.com.cn/580x290/pics/super/2012/04/7HDMC.jpg" data-bd-imgshare-binded="1">
+                                    <img src="images/7HDMC(1).jpg" width="97" height="100" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s3.lvjs.com.cn/580x290/pics/super/2012/04/7HDMC.jpg" data-bd-imgshare-binded="1">
                                     <span class="zz_panel"></span>
                                 </li>
                                 <li class="">
-                                    <img src="images/27WCT.jpg" width="97" height="71" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s2.lvjs.com.cn/580x290/pics/super/2012/04/27WCT.jpg" data-bd-imgshare-binded="1">
+                                    <img src="images/27WCT.jpg" width="97" height="100" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s2.lvjs.com.cn/580x290/pics/super/2012/04/27WCT.jpg" data-bd-imgshare-binded="1">
                                     <span class="zz_panel"></span>
                                 </li>
                                 <li class="">
-                                    <img src="images/DDX6H(1).jpg" width="97" height="71" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s1.lvjs.com.cn/580x290/pics/super/2012/04/DDX6H.jpg" data-bd-imgshare-binded="1">
+                                    <img src="images/DDX6H(1).jpg" width="97" height="100" alt="哈库拉岛CHAAYA LAGOON岛4晚6天游*4晚水屋Water Bungalow*一价全包*5M航空(BJ)" rev="http://s1.lvjs.com.cn/580x290/pics/super/2012/04/DDX6H.jpg" data-bd-imgshare-binded="1">
                                     <span class="zz_panel"></span>
                                 </li>
                             </ul>
+                            <div id="map">
+
+                            </div>
                         </div>
                         <!--focus-->
                         <!--不定期产品不显示时间价格表 -->
                         <div class="time-price-one" data-pid="60971" data-bid="60971">
-                            <div class="calendar_free" data-super-free="false" data-product-type="ROUTE" data-sub-product-type="FREENESS_FOREIGN">
+                           <%-- <div id="div1" ></div>
+                            <script type="text/javascript">
+                                WdatePicker({eCont:'div1',onpicked:function (dp) {
+                                        alert('The date you selected is'+dp.cal.getDateStr())
+                                    }});
+                            </script>--%>
+
+                        <%--       <div id="testView">请选择出游日期：</div>
+                               <div id="test2"></div>
+                               <input type="hidden" name="date">
+                               <script>
+                                   laydate.render({
+                                       elem: '#test2'
+                                       ,position: 'static'
+                                       ,change: function(value, date){ //监听日期被切换
+                                           $("[name=date]").val(value)
+                                           alert( $("[name=date]").val())
+                                       }
+                                   });
+
+                               </script>--%>
+
+
+                            <%--<div class="calendar_free" data-super-free="false" data-product-type="ROUTE" data-sub-product-type="FREENESS_FOREIGN">
                                 <div class="search_pp_calendar_box">
-                                    <h2 class="search_pp_calendar_tit">出行日价格表</h2>
-                                    <div class="search_pp_calendar_m">
+                                    <h2 class="search_pp_calendar_tit">出行日价格表</h2>--%>
+                                    <%--<div class="search_pp_calendar_m">
                                         <div class="search_pp_cal_nevm">
                                             <span class="search_pp_cal_nevm_no_icon"></span>
                                             <span class="search_pp_cal_nevm_text">6月</span>
@@ -2074,9 +2107,9 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-
+                                </div>--%>
+                          <%--  </div>--%>
+<%--
                             <select id="selectTimePrice" style="display:none;">
                                 <option value="2014-06-14">
                                     06-14（星期六）
@@ -2262,7 +2295,7 @@
                                     08-31（星期日）
                                     2沙beach ...￥12800
                                 </option>
-                            </select>
+                            </select>--%>
 
                             <!--日历上展示的优惠信息模板-->
                             <input type="hidden" value="{1}， 立减&lt;i class=&#39;orange&#39;&gt;{2}&lt;/i&gt;元/份。" id="tipTemplete1">
@@ -2279,10 +2312,7 @@
                         <div class="dtl_box_r_topbox">
                             <div class="dtl_boxr_txt1">
                                 <p>
-                                    <label>市 场 价：</label>
-                                    <span class="dtl_linetxt">¥14600</span>
-                                    <br>
-                                    <label>在途中价：</label> <strong>¥ <em>12800</em></strong>
+                                    <label>驴妈妈价：</label> <strong>¥ <em>${aPackage.price}</em></strong>
                                     <span class="qijia">起 &nbsp; <em  class="qijiashuoming" tip-content='本起价是指未包含附加服务（如单人房差、保险费等）的基本价格。您最终确认的价格将会随所选出行日期、人数及服务项目而相应变化。 '>起价说明</em></span>
                                 </p>
                                 <div class="xh-youhui">
@@ -2291,7 +2321,7 @@
                                     <div style="overflow:hidden;">
                                         <span class="tags101">促销</span>
                                         <span class="tags101" tip-content="1.&lt;b&gt;该产品支持奖金抵扣&lt;/b&gt;&lt;br&gt; 在线支付用户可使用奖金抵扣，订单支付步骤可见奖金抵用金额。&lt;br&gt;2.&lt;b&gt;如何获得奖金&lt;/b&gt;&lt;br&gt; 如所购产品有奖金，游玩后发表体验点评，即可获得返奖金。">奖金抵扣</span>
-                                        <span class="tags101" tip-content="1.该产品支持通过使用在途中积分兑换优惠券获得支付抵扣 &lt;br&gt;2.该优惠不能与其它优惠券以及优惠活动同时使用 ">积分抵用</span>
+                                        <span class="tags101" tip-content="1.该产品支持通过使用驴妈妈积分兑换优惠券获得支付抵扣 &lt;br&gt;2.该优惠不能与其它优惠券以及优惠活动同时使用 ">积分抵用</span>
                                         <ul class="youhui_tab" style="color:#f60;padding-left:4px;"></ul>
                                     </div>
                                 </div>
@@ -2312,39 +2342,69 @@
                                     <label>互动有奖：</label>
                                     <span class="gray" style="float: left; max-width: 66%;">
 								购买成功并点评，
-								<i class="orange xtiptext" tip-content="1.&lt;b&gt;写体验点评返奖金&lt;/b&gt;&lt;br&gt;预订此产品，游玩归来发表体验点评，即可获得此点评奖金。&lt;br&gt;2.&lt;b&gt;如何发表体验点评&lt;/b&gt;&lt;br&gt;登录我的在途中—我的点评—待点评，即可发表点评。">返60元奖金（手机预订返78元哦！）</i>
+								<i class="orange xtiptext" tip-content="1.&lt;b&gt;写体验点评返奖金&lt;/b&gt;&lt;br&gt;预订此产品，游玩归来发表体验点评，即可获得此点评奖金。&lt;br&gt;2.&lt;b&gt;如何发表体验点评&lt;/b&gt;&lt;br&gt;登录我的驴妈妈—我的点评—待点评，即可发表点评。">返60元奖金（手机预订返78元哦！）</i>
 							</span>
                                     <br></p>
                                 <div style="clear:both;"></div>
                                 <label>出发/目的地：</label>
-                                北京
+                                ${aPackage.bplace}
                                 <img width="32" height="5" align="absmiddle" class="dtl_goto_icon" alt=" " src="images/arrow.gif" data-bd-imgshare-binded="1">
                                 <span id="toId" style="display:none;">3546</span>
-                                马尔代夫
+                                ${aPackage.eplace}
                                 <br>
+                                <div>
+                                    <label>酒店信息：</label>
+                                    <a href="javascript:void(0)" onclick="showMap(${hotel.id})">${hotel.h_name}</a></div>
+                                <div>
                                 <label>支付方式：</label>
-                                在线支付、电话支付、
+                                在线支付、
                                 <b title="银行转账金额至少不低于￥5000">银行转账</b>
                                 、
                                 <b title="分期支付金额至少不低于￥1000">分期支付</b>
                                 <p></p>
-
+                                </div>
                             </div>
+
                             <!--txt1-->
                             <div class="play_date">
-                                <form method="post" action="http://www.lvmama.com/buy/fill.do" onsubmit="return beforeSubmit(this);">
-                                    <input type="hidden" name="buyInfo.productId" value="60971">
-                                    <input type="hidden" name="buyInfo.prodBranchId" value="60971">
-                                    <input type="hidden" name="buyInfo.productType" value="ROUTE">
-                                    <input type="hidden" id="subProductType" name="buyInfo.subProductType" value="FREENESS_FOREIGN">
-                                    <input type="hidden" id="selfPack" value="">
+                                <form method="post" action="" onsubmit="return beforeSubmit(this);">
+
                                     <dl class="clearfix">
                                         <!--非不定期产品才显示游玩日期-->
                                         <dt id="date_type">
-                                            <em>*</em>
-                                            游玩日期：
+                                            <div id="testView">请选择出游日期：
+                                                <input type="text" id="bDate">
+                                                <i class="layui-icon layui-icon-date" onclick="showDate()"></i>
+                                            </div>
+                                               <div id="test2" hidden style="z-index: 7;position: absolute"></div>
+                                               <input type="hidden" name="date">
+                                               <script>
+                                                   laydate.render({
+                                                       elem: '#test2'
+                                                       ,position: 'static'
+                                                       ,showBottom: false
+                                                       ,mark: {
+                                                           '0-0-5': '开团'
+                                                           ,'0-0-10': '开团'
+                                                           ,'0-0-15': '开团'
+                                                           ,'0-0-20': '开团'
+                                                           ,'0-0-25': '开团' //每个月10号
+                                                           ,'0-0-30': '开团' //每个月10号
+                                                       }
+                                                       ,change: function(value, date){ //监听日期被切换
+                                                           if(date.date !== 5&&date.date !== 10&&date.date !== 15&&date.date !== 20&&date.date !== 25&&date.date !== 30){ //点击2017年8月15日，弹出提示语
+                                                               alert('该日期不开团');
+                                                               return false;
+                                                           }
+                                                           $("[name=date]").val(value)
+                                                           $("#bDate").val(value)
+                                                           $("#test2").hide()
+                                                       }
+                                                   });
+
+                                               </script>
                                         </dt>
-                                        <dd class="quick-wrap">
+                                        <%--<dd class="quick-wrap">
                                             <p>
                                                 <select name="buyInfo.visitTime" id="quickBooker_select_1" class="quickBooker_select">
                                                     <option value="0">请选择游玩日期</option>
@@ -2544,15 +2604,15 @@
 										</span>
                                             </div>
                                         </dd>
-                                    </dl>
+                                    </dl>--%>
                                     <dl class="clearfix">
-                                        <dt>
+                                       <%-- <dt>
                                             <em>*</em>
                                             预订数量：
-                                        </dt>
+                                        </dt>--%>
                                         <dd style="position: relative;">
                                             <div id="quickBooker1_tab2">
-                                                <table class="free_dtl_pro_tab">
+                                                <%--<table class="free_dtl_pro_tab">
                                                     <!-- 默认类别-->
                                                     <!-- 不定期-->
                                                     <!-- 非不定期-->
@@ -2564,14 +2624,14 @@
                                                         </td>
                                                         <td>
 														<span class="price-wrap">
-															<em class="minus price-disable" onclick="">-</em>
-															<input seq="1" name="buyInfo.buyNum.product_60971"  type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="" minamt="0" maxamt="100" textnum="textNum60971" people="1" branchid="60971">
-															<em class="plus" onclick="">+</em>
+															<em class="minus price-disable" onclick="updateOperator(&#39;60971&#39;,&#39;miuns&#39;,this)">-</em>
+															<input seq="1" name="buyInfo.buyNum.product_60971" id="param60971" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;60971&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum60971" people="1" branchid="60971">
+															<em class="plus" onclick="updateOperator(&#39;60971&#39;,&#39;add&#39;,this)">+</em>
 														</span>
                                                         </td>
                                                         <td>
 														<span>
-															(单价 <dfn>¥ <font class="product_60971_price">12800</font></dfn>
+															(单价 <dfn>¥ <font class="product_60971_price" id="product_60971_price">12800</font></dfn>
 															)
 														</span>
                                                         </td>
@@ -2588,27 +2648,28 @@
                                                         </td>
                                                         <td>
 														<span class="price-wrap">
-															<em class="minus price-disable" onclick="">-</em>
-															<input seq="1" name="buyInfo.buyNum.product_100232" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;100232&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum100232" people="1" branchid="100232">
-															<em class="plus" onclick="">+</em>
+															<em class="minus price-disable" onclick="updateOperator(&#39;100232&#39;,&#39;miuns&#39;,this)">-</em>
+															<input seq="1" name="buyInfo.buyNum.product_100232" id="param100232" type="text" size="2" class="number prod-num" value="0" ordnum="ordNum" onchange="updateOperator(&#39;100232&#39;,&#39;input&#39;,this)" minamt="0" maxamt="100" textnum="textNum100232" people="1" branchid="100232">
+															<em class="plus" onclick="updateOperator(&#39;100232&#39;,&#39;add&#39;,this)">+</em>
 														</span>
                                                         </td>
                                                         <td>
 														<span>
-															(单价 <dfn>¥ <font class="product_100232_price">12900</font></dfn>
+															(单价 <dfn>¥ <font class="product_100232_price" id="product_100232_price">12900</font></dfn>
 															)
 														</span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
-                                                </table>
+                                                </table>--%>
                                             </div>
                                             <!--  end-->
                                             <!--按钮-->
                                             <!-- 非超级自由行-->
                                             <!-- 可售-->
+
                                             <span class="bookerBtn">
-										<input type="submit" class="immediateB" value="" style="cursor:pointer"></span>
+										    <input type="button" class="immediateB" value="" style="cursor:pointer" onclick="toOrder(${param.packageId})"></span>
                                             <a class="dtl_savebtn" style="display:none" href="javascript:addBookmark();" hidefocus="false">收藏该商品</a>
                                             <br>
                                             <a class="dtl_savebtn detail-recomment" style="display:none" href="javascript:void(0)" hidefocus="false">推荐给好友</a>
@@ -2616,14 +2677,6 @@
 
                                     </dl>
                                 </form>
-                                <div class="ewm_box ewm_box_xl">
-                                    <img src="images/60971.png" width="75" height="75" alt="手机订购二维码" data-bd-imgshare-binded="1">
-                                    <p>
-                                        用在途中app扫描此二维码
-                                        <span>手机订购更优惠</span>
-                                    </p>
-                                    <span class="zhiyin"></span>
-                                </div>
                                 <p class="dtl_r_hint"></p>
                                 <div class="recomment_wra">
                                     <i class="arrow-bg"></i>
@@ -2692,7 +2745,7 @@
                                 <input type="hidden" id="productName" name="productName" value="【出境暑假狂欢季】马尔代夫哈库拉CHAAYA LAGOON岛4晚6日自由行*5M航空直飞 一价全包"></div>
 
                         </div>
-                        <!--topbox-->
+                        <!--gonggao-->
                         <div class="dtl_cfd_gonggao">
                             <h3>
                                 <b>公告</b>
@@ -2701,7 +2754,6 @@
                                 <li>12岁以下儿童、外籍、单房差价格请来电咨询客服</li>
                             </ol>
                         </div>
-                        <!--gonggao-->
 
                     </div>
                     <!--boxright-->
@@ -4774,6 +4826,7 @@
         })
 
     })
+
 </script>
 </body>
 </html>

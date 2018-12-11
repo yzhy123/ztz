@@ -2,7 +2,7 @@ package cn.entity;
 
 public class City {
     private Integer id;
-    private String c_name;
+    private String cityName;
     private Integer pvc_id;   //省id
 
     public Integer getId() {
@@ -13,12 +13,12 @@ public class City {
         this.id = id;
     }
 
-    public String getC_name() {
-        return c_name;
+    public String getCityName() {
+        return cityName;
     }
 
-    public void setC_name(String c_name) {
-        this.c_name = c_name;
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
     public Integer getPvc_id() {

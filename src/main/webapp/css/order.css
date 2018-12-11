@@ -1,15 +1,15 @@
 .head_nav{
-    width:100%;
+    width:99%;
     height:76px;
     background: white;
     border:1px #acacac solid;
 }
 #nav_logo{
     display: inline-block;
-    width:130px;
+    width:140px;
     height:64px;
     background: url("/images/logo2.png");
-    background-size: 130px 64px;
+    background-size: 140px 64px;
     margin-left:100px;
     color: white;
 }
@@ -28,4 +28,56 @@
 .person_num{
     width:22px;
     text-align: center;
+    height: 20.99px;
+    line-height: 20.99px;
+    border: 0;
+    background: white;
+}
+
+.left-card{
+    width: 60%;
+}
+.right-card{
+    width:30%;
+}
+.addAnddel{
+    display: inline-block;
+    width:22px;
+    text-align: center;
+    height: 20.99px;
+    line-height: 20.99px;
+    border: 1px rgb(165, 165, 171) solid;
+}
+.addAnddel2{
+    margin: auto -5px;
+    display: inline-block;
+    width:22px;
+    text-align: center;
+    height: 20.99px;
+    line-height: 20.99px;
+    border: 1px rgb(165, 165, 171) solid;
+}
+.xinghao_red{
+    color: red;
+}
+.p_num_div{
+    display: inline-block;
+    width:50px;
+    font-size: 12px;
+    color: rgb(165, 165, 171);
+    border: 0.5px #dedede solid;
+}
+.p_num_span{
+    text-align: center;
+    display: block;
+    height: 14px;
+    line-height: 14px;
+}
+.p_num_span1{
+    text-align: center;
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    background-color: #00b40c;
 }
